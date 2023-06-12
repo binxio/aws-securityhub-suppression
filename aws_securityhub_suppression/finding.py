@@ -6,7 +6,7 @@ class Finding:
         self.__region = parts[3]
         self.__account_id = parts[4]
         self.__finding_id = parts[-1].split("/")[-1]
-        self.__generator_id = "/".join(finding_arn.split("/")[1:-1])
+        self.__generator_id = "/".join(finding_arn.split("/")[1:-2])
 
     @property
     def arn(self) -> str:

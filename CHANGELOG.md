@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2023-06-12)
+
+### Fix
+
+* Generator id ([#6](https://github.com/binxio/aws-securityhub-suppression/issues/6)) ([`0383744`](https://github.com/binxio/aws-securityhub-suppression/commit/03837446da05942e4808e78880a97dfdc58ff189))
+
 ## v0.2.0 (2023-06-12)
 
 ### Feature
