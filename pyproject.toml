@@ -17,7 +17,7 @@ types-pyyaml = "^6.0.12.10"
 
 [tool.semantic_release]
 version_variable = [
-    "landingzone_organization/__init__.py:__version__",
+    "aws_securityhub_suppression/__init__.py:__version__",
     "pyproject.toml:version"
 ]
 branch = "main"
