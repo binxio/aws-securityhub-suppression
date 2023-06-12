@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.0 (2023-06-12)
+
+### Feature
+
+* Add logic to findings to power smarter templates ([#5](https://github.com/binxio/aws-securityhub-suppression/issues/5)) ([`a843e63`](https://github.com/binxio/aws-securityhub-suppression/commit/a843e637f546db033ed53ba840d960ddb01c61cb))
+
+### Documentation
+
+* Add documentation setup ([#4](https://github.com/binxio/aws-securityhub-suppression/issues/4)) ([`b710d6b`](https://github.com/binxio/aws-securityhub-suppression/commit/b710d6b495010ddf44d48517b5a701061f1e4d2c))
+
 ## v0.1.0 (2023-06-12)
 
 ### Feature
