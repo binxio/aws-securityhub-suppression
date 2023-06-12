@@ -7,7 +7,7 @@ from aws_securityhub_suppression.workload import Workload
 from aws_securityhub_suppression.suppression import Suppression
 
 
-__version__ = "0.1.0"
+__version__ = "0.0.0"
 
 
 def load_workloads(workload_path: str) -> List[Workload]:
