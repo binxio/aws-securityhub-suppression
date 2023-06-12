@@ -5,6 +5,7 @@ import landingzone_organization
 
 from landingzone_organization import Organization, OrganizationUnit
 from aws_securityhub_suppression import Workload, Account
+from aws_securityhub_suppression.finding import Finding
 from aws_securityhub_suppression.suppression import Suppression
 
 
@@ -31,7 +32,9 @@ def workload() -> Workload:
                         name="My Suppression",
                         reason="Good reason",
                         findings=[
-                            "arn:aws:securityhub:eu-west-1:000000000000:subscription/finding/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+                            Finding(
+                                finding_arn="arn:aws:securityhub:eu-west-1:000000000000:subscription/finding/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+                            )
                         ],
                     )
                 ],
