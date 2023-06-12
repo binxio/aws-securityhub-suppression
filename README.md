@@ -1,8 +1,8 @@
 # AWS SecurityHub - Suppression
 
-[![Maintenance](https://img.shields.io/badge/Maintained-yes-green.svg)](https://github.com/Nr18/pull-request-codecommit/graphs/commit-activity)
-[![GitHub release](https://img.shields.io/github/release/binxio/landingzone-organization.svg)](https://github.com/binxio/landingzone-organization/releases/)
-[![Continuous Integration](https://github.com/binxio/landingzone-organization/actions/workflows/ci.yml/badge.svg)](https://github.com/binxio/landingzone-organization/actions/workflows/ci.yml)
+[![Maintenance](https://img.shields.io/badge/Maintained-yes-green.svg)](https://github.com/Nr18/aws-securityhub-suppression/graphs/commit-activity)
+[![GitHub release](https://img.shields.io/github/release/binxio/aws-securityhub-suppression.svg)](https://github.com/binxio/aws-securityhub-suppression/releases/)
+[![Continuous Integration](https://github.com/binxio/aws-securityhub-suppression/actions/workflows/ci.yml/badge.svg)](https://github.com/binxio/aws-securityhub-suppression/actions/workflows/ci.yml)
 
 This tool allows you to manage your Suppression's as Code.
 
