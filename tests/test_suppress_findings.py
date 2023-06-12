@@ -6,7 +6,7 @@ from aws_securityhub_suppression.suppress_findings import SuppressFindings
 
 
 def test_suppress(workload: Workload) -> None:
-    client = boto3.client("securityhub")
+    client = boto3.client("securityhub", region="eu-west-1")
 
     with Stubber(client) as stubber:
         stubber.add_response(
