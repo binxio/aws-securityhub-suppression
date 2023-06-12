@@ -1,6 +1,7 @@
 from typing import List
 
 from aws_securityhub_suppression import Workload
+from aws_securityhub_suppression.finding import Finding
 from aws_securityhub_suppression.suppression import Suppression
 
 
@@ -15,21 +16,10 @@ class SuppressFindings:
             self.__handle_suppressions(suppress_findings)
 
     def __handle_suppressions(self, suppressions: List[Suppression]) -> None:
-        def parse_arn(arn: str) -> dict:
-            parts = arn.split(":")
+        def convert_to_finding_identifier(finding: Finding) -> dict:
             return {
-                "Partition": parts[1],
-                "Service": parts[2],
-                "Region": parts[3],
-                "AccountId": parts[4],
-                "Type": parts[5],
-            }
-
-        def convert_to_finding_identifier(finding_id: str) -> dict:
-            arn = parse_arn(finding_id)
-            return {
-                "Id": finding_id,
-                "ProductArn": f"arn:aws:securityhub:{arn['Region']}::product/aws/securityhub",
+                "Id": finding.arn,
+                "ProductArn": finding.product_arn,
             }
 
         for suppression in suppressions:
