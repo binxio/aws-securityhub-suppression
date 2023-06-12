@@ -1,0 +1,9 @@
+reports/
+__pycache__
+.pytest_cache
+.mypy_cache
+.DS_Store
+.coverage
+.idea
+.aws-sam
+dist
