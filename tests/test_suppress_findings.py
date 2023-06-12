@@ -8,12 +8,14 @@ from aws_securityhub_suppression.suppress_findings import SuppressFindings
 def test_workload(workload: Workload) -> None:
     assert (
         workload.accounts[0].suppressions[0].findings[0].arn
-        == "arn:aws:securityhub:eu-west-1:000000000000:subscription/finding/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+        == "arn:aws:securityhub:eu-west-1:000000000000:subscription/my-generator/finding/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
     )
     assert workload.accounts[0].suppressions[0].findings[0].region == "eu-west-1"
     assert workload.accounts[0].suppressions[0].findings[0].account_id == "000000000000"
     assert workload.accounts[0].suppressions[0].findings[0].service == "securityhub"
-    assert workload.accounts[0].suppressions[0].findings[0].generator_id == "finding"
+    assert (
+        workload.accounts[0].suppressions[0].findings[0].generator_id == "my-generator"
+    )
     assert (
         workload.accounts[0].suppressions[0].findings[0].id
         == "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
@@ -30,7 +32,7 @@ def test_suppress(workload: Workload) -> None:
             expected_params={
                 "FindingIdentifiers": [
                     {
-                        "Id": "arn:aws:securityhub:eu-west-1:000000000000:subscription/finding/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+                        "Id": "arn:aws:securityhub:eu-west-1:000000000000:subscription/my-generator/finding/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
                         "ProductArn": "arn:aws:securityhub:eu-west-1::product/aws/securityhub",
                     }
                 ],
