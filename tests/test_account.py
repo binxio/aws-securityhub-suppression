@@ -2,8 +2,6 @@ from aws_securityhub_suppression import Account
 
 
 def test_account() -> None:
-    assert Account.from_dict({}) is None
-
     account = Account.from_dict(
         {"Name": "my-name", "AccountId": "123456781234", "Suppressions": []}
     )

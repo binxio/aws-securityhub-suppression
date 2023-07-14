@@ -13,7 +13,7 @@ lint: _black _mypy ## Lint all project files
 
 .PHONY: test
 test: lint complexity ## Run the test suite defined in the project
-	pytest --cov --cov-report term-missing --junitxml=reports/pytest.xml --cov-report xml:reports/coverage.xml
+	pytest -vv --cov --cov-report term-missing --junitxml=reports/pytest.xml --cov-report xml:reports/coverage.xml
 
 .PHONY: install
 install: $(VIRTUAL_ENV) ## Install all dependencies

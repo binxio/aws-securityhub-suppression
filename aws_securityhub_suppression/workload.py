@@ -1,6 +1,5 @@
 from __future__ import annotations
-
-from typing import Optional, List
+from typing import List
 
 from aws_securityhub_suppression import Account
 
@@ -19,9 +18,5 @@ class Workload:
         return self.__accounts
 
     @staticmethod
-    def from_dict(data: dict, accounts: List[Account]) -> Optional[Workload]:
-        # TODO: Schema validation
-        if "Name" not in data:
-            return None
-
+    def from_dict(data: dict, accounts: List[Account]) -> Workload:
         return Workload(name=data["Name"], accounts=accounts)

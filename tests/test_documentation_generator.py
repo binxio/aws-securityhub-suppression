@@ -21,7 +21,7 @@ The binxio-my-workload-development has the following suppressions registered:
 
 **Name** | **Findings** | **Reason**
 ---------|--------------|---------------
-My Suppression | <ul><li>arn:aws:securityhub:eu-west-1:000000000000:subscription/my-generator/finding/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</li></ul> | Good reason
+My Suppression | <ul><li>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</li></ul> | Good reason
 
 
 ## binxio-my-workload-testing

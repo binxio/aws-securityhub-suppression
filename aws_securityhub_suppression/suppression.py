@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import Optional, List, Any
+from typing import List
 
 from aws_securityhub_suppression.finding import Finding
 
@@ -23,11 +23,6 @@ class Suppression:
         return self.__findings
 
     @staticmethod
-    def from_dict(data: dict) -> Optional[Suppression]:
-        # TODO: Schema validation
-        if "Name" not in data:
-            return None
-
-        findings = list(map(Finding, data["Findings"]))
-
+    def from_dict(data: dict) -> Suppression:
+        findings = list(map(Finding.from_dict, data["Findings"]))
         return Suppression(name=data["Name"], reason=data["Reason"], findings=findings)

@@ -33,7 +33,8 @@ def workload() -> Workload:
                         reason="Good reason",
                         findings=[
                             Finding(
-                                finding_arn="arn:aws:securityhub:eu-west-1:000000000000:subscription/my-generator/finding/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+                                name="my-resource",
+                                finding_arn="arn:aws:securityhub:eu-west-1:000000000000:subscription/my-generator/finding/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
                             )
                         ],
                     )

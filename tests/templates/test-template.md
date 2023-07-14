@@ -14,6 +14,6 @@ The {{ account.name }} has the following suppressions registered:
 
 **Name** | **Findings** | **Reason**
 ---------|--------------|---------------
-{% for suppression in account.suppressions %}{{ suppression.name }} | <ul>{% for finding in suppression.findings %}<li>{{ finding }}</li>{% endfor %}</ul> | {{ suppression.reason }}
+{% for suppression in account.suppressions %}{{ suppression.name }} | <ul>{% for finding in suppression.findings %}<li>{{ finding.id }}</li>{% endfor %}</ul> | {{ suppression.reason }}
 {% endfor %}{% else %}
 There are no suppression's registered under the {{ account.name }} account.{% endif %}{% endfor %}{% endif %}
