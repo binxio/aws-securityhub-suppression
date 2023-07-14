@@ -1,12 +1,20 @@
+from __future__ import annotations
+
+
 class Finding:
-    def __init__(self, finding_arn: str) -> None:
+    def __init__(self, name: str, finding_arn: str) -> None:
         parts = finding_arn.split(":")
+        self.__name = name
         self.__finding_arn = finding_arn
         self.__service = parts[2]
         self.__region = parts[3]
         self.__account_id = parts[4]
         self.__finding_id = parts[-1].split("/")[-1]
         self.__generator_id = "/".join(finding_arn.split("/")[1:-2])
+
+    @property
+    def name(self) -> str:
+        return self.__name
 
     @property
     def arn(self) -> str:
@@ -38,3 +46,7 @@ class Finding:
 
     def __str__(self) -> str:
         return self.__finding_arn
+
+    @staticmethod
+    def from_dict(data: dict) -> Finding:
+        return Finding(name=data["Name"], finding_arn=data["FindingArn"])

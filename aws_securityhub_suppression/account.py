@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import Optional, List
+from typing import List
 
 import landingzone_organization
 
@@ -22,11 +22,7 @@ class Account(landingzone_organization.Account):
         return self.suppressions
 
     @staticmethod
-    def from_dict(data: dict) -> Optional[Account]:
-        # TODO: Schema validation
-        if "Name" not in data:
-            return None
-
+    def from_dict(data: dict) -> Account:
         suppressions = list(Suppression.from_dict(d) for d in data["Suppressions"])
         return Account(
             name=data["Name"],
