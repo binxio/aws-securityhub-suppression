@@ -21,12 +21,18 @@ class WorkloadGenerator:
     def __resolve_workload_info(self, file: str) -> dict:
         info = {
             "Name": self.__workload.name,
+            "Environments": list(
+                map(lambda account: account.environment, self.__workload.accounts)
+            ),
         }
 
         if os.path.isfile(file):
             with open(file, "r") as fh:
                 info = yaml.safe_load(fh)
                 info["Name"] = self.__workload.name
+                info["Environments"] = list(
+                    map(lambda account: account.environment, self.__workload.accounts)
+                )
 
         return info
 
@@ -44,11 +50,11 @@ class WorkloadGenerator:
         info = self.__resolve_workload_info(file)
 
         with open(file, "w") as fh:
-            yaml.dump(info, fh)
+            yaml.dump(info, fh, sort_keys=False)
 
         for account in self.__workload.accounts:
             environment_file = os.path.join(path, f"{account.environment}.yaml")
 
             if not os.path.isfile(environment_file):
                 with open(environment_file, "w") as fh:
-                    yaml.dump(self.__resolve_account_info(account), fh)
+                    yaml.dump(self.__resolve_account_info(account), fh, sort_keys=False)
