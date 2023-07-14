@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2023-07-14)
+
+### Feature
+
+* Add strickt schema validation ([#15](https://github.com/binxio/aws-securityhub-suppression/issues/15)) ([`2b36047`](https://github.com/binxio/aws-securityhub-suppression/commit/2b360476829c2c974bb335f9e7582a011fb6afa7))
+
 ## v0.2.1 (2023-06-12)
 
 ### Fix
