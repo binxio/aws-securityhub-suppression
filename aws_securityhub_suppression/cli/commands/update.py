@@ -14,7 +14,7 @@ def cli() -> None:
     pass
 
 
-@cli.command()
+@cli.command()  # type: ignore
 @click.pass_obj
 @click.argument("config-path")
 def suppression(ctx: Context, config_path: str) -> None:
@@ -33,7 +33,7 @@ def suppression(ctx: Context, config_path: str) -> None:
         ).execute()
 
 
-@cli.command()
+@cli.command()  # type: ignore
 @click.pass_obj
 @click.argument("template-path")
 @click.argument("config-path")
