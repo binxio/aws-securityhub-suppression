@@ -12,7 +12,7 @@ from aws_securityhub_suppression.suppression import Suppression
 from aws_securityhub_suppression.finding import Finding
 
 
-__version__ = "0.3.0"
+__version__ = "0.3.1"
 
 
 def load_workloads(workload_path: str) -> List[Workload]:

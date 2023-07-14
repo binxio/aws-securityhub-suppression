@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.1 (2023-07-14)
+
+### Fix
+
+* Generate a valid info file ([#16](https://github.com/binxio/aws-securityhub-suppression/issues/16)) ([`8db95e2`](https://github.com/binxio/aws-securityhub-suppression/commit/8db95e2ad44f75dc583c2d401a71d4347f0e9ee2))
+
 ## v0.3.0 (2023-07-14)
 
 ### Feature
