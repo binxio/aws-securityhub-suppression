@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.2 (2023-07-17)
+
+### Fix
+
+* Environment sorting issue ([#19](https://github.com/binxio/aws-securityhub-suppression/issues/19)) ([`4ec7951`](https://github.com/binxio/aws-securityhub-suppression/commit/4ec795171401affd008948c35db66740431e4c2c))
+
 ## v0.3.1 (2023-07-14)
 
 ### Fix
