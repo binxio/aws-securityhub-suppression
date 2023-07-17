@@ -3,8 +3,8 @@ import os
 import pytest
 import landingzone_organization
 
-from landingzone_organization import Organization, OrganizationUnit
-from aws_securityhub_suppression import Workload, Account
+from landingzone_organization import Organization, OrganizationUnit, Workload
+from aws_securityhub_suppression import Account
 from aws_securityhub_suppression.finding import Finding
 from aws_securityhub_suppression.suppression import Suppression
 
@@ -25,6 +25,21 @@ def workload() -> Workload:
         "my-workload",
         [
             Account(
+                name="binxio-my-workload-production",
+                account_id="000000000000",
+                suppressions=[],
+            ),
+            Account(
+                name="binxio-my-workload-testing",
+                account_id="000000000000",
+                suppressions=[],
+            ),
+            Account(
+                name="binxio-my-workload-acceptance",
+                account_id="000000000000",
+                suppressions=[],
+            ),
+            Account(
                 name="binxio-my-workload-development",
                 account_id="000000000000",
                 suppressions=[
@@ -39,21 +54,6 @@ def workload() -> Workload:
                         ],
                     )
                 ],
-            ),
-            Account(
-                name="binxio-my-workload-testing",
-                account_id="000000000000",
-                suppressions=[],
-            ),
-            Account(
-                name="binxio-my-workload-acceptance",
-                account_id="000000000000",
-                suppressions=[],
-            ),
-            Account(
-                name="binxio-my-workload-production",
-                account_id="000000000000",
-                suppressions=[],
             ),
         ],
     )
@@ -117,7 +117,8 @@ def organization() -> Organization:
                             name="Acceptance",
                             accounts=[
                                 landingzone_organization.Account(
-                                    "binxio-example-workload-acceptance", "333344445555"
+                                    "binxio-example-workload-acceptance",
+                                    "333344445555",
                                 ),
                             ],
                         ),
@@ -126,7 +127,8 @@ def organization() -> Organization:
                             name="Production",
                             accounts=[
                                 landingzone_organization.Account(
-                                    "binxio-example-workload-production", "444455556666"
+                                    "binxio-example-workload-production",
+                                    "444455556666",
                                 ),
                             ],
                         ),

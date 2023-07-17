@@ -424,13 +424,13 @@ referencing = ">=0.28.0"
 
 [[package]]
 name = "landingzone-organization"
-version = "0.4.0"
+version = "0.6.3"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "landingzone_organization-0.4.0-py3-none-any.whl", hash = "sha256:620bb2011871b2ae7872af15ae076e377d691bd6ad347885241132d975f8bb86"},
-    {file = "landingzone_organization-0.4.0.tar.gz", hash = "sha256:b6420f1abae81059b4099e5bf7fc86ba16748ba7ef2f44d42324fe31dc7aabbd"},
+    {file = "landingzone_organization-0.6.3-py3-none-any.whl", hash = "sha256:23f5c1cae0dac1d600f27858dc350247881b7c2ca676b1964f084db57b0b2c89"},
+    {file = "landingzone_organization-0.6.3.tar.gz", hash = "sha256:93c66f3bf64918f8f4c4c9334e9a6311c9657269e701624c43b3eb5f4c51731f"},
 ]
 
 [package.dependencies]
@@ -595,13 +595,13 @@ files = [
 
 [[package]]
 name = "platformdirs"
-version = "3.8.1"
+version = "3.9.1"
 description = "A small Python package for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "platformdirs-3.8.1-py3-none-any.whl", hash = "sha256:cec7b889196b9144d088e4c57d9ceef7374f6c39694ad1577a0aab50d27ea28c"},
-    {file = "platformdirs-3.8.1.tar.gz", hash = "sha256:f87ca4fcff7d2b0f81c6a748a77973d7af0f4d526f98f308477c3c436c74d528"},
+    {file = "platformdirs-3.9.1-py3-none-any.whl", hash = "sha256:ad8291ae0ae5072f66c16945166cb11c63394c7a3ad1b1bc9828ca3162da8c2f"},
+    {file = "platformdirs-3.9.1.tar.gz", hash = "sha256:1b42b450ad933e981d56e59f1b97495428c9bd60698baab9f3eb3d00d5822421"},
 ]
 
 [package.extras]
@@ -980,4 +980,4 @@ requests = ">=2.0,<3.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "13b1e07fe35eebd4ac89ebb3f5fbf22533ec1e333643f4721f85039afced3cff"
+content-hash = "58d0ea55ace1a251813f4f24cd42e348f4a36552a6d538de417f0ff0ab89f2e7"
