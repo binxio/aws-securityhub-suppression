@@ -424,13 +424,13 @@ referencing = ">=0.28.0"
 
 [[package]]
 name = "landingzone-organization"
-version = "0.4.0"
+version = "0.6.1"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "landingzone_organization-0.4.0-py3-none-any.whl", hash = "sha256:620bb2011871b2ae7872af15ae076e377d691bd6ad347885241132d975f8bb86"},
-    {file = "landingzone_organization-0.4.0.tar.gz", hash = "sha256:b6420f1abae81059b4099e5bf7fc86ba16748ba7ef2f44d42324fe31dc7aabbd"},
+    {file = "landingzone_organization-0.6.1-py3-none-any.whl", hash = "sha256:6d84440acdd0bea018dfbba984265ac38af4efcc32bf5b909d419b274950cc7d"},
+    {file = "landingzone_organization-0.6.1.tar.gz", hash = "sha256:d2e94aa370cc82904a38a590aea6409b58015f19a1469dd734b30f78e162a0c1"},
 ]
 
 [package.dependencies]
@@ -980,4 +980,4 @@ requests = ">=2.0,<3.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "13b1e07fe35eebd4ac89ebb3f5fbf22533ec1e333643f4721f85039afced3cff"
+content-hash = "244fdfdf4e682054456630503f4e6415e96400fd88a784c4fce2ac1ad022711f"
