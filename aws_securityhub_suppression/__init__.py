@@ -1,13 +1,13 @@
 from typing import List, Optional
 import glob
 import os
+from landingzone_organization.workload import Workload
 from aws_securityhub_suppression.account import Account
 from aws_securityhub_suppression.schemas import (
     WorkloadSchema,
     EnvironmentSchema,
     safe_load_file,
 )
-from aws_securityhub_suppression.workload import Workload
 from aws_securityhub_suppression.suppression import Suppression
 from aws_securityhub_suppression.finding import Finding
 
