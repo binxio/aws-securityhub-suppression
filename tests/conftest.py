@@ -22,8 +22,9 @@ def template() -> str:
 @pytest.fixture
 def workload() -> Workload:
     return Workload(
-        "my-workload",
-        [
+        name="my-workload",
+        display_name="My Workload",
+        accounts=[
             Account(
                 name="binxio-my-workload-production",
                 account_id="000000000000",
