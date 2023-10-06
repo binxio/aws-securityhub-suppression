@@ -13,7 +13,10 @@ class Context:
 
     @property
     def session(self) -> Session:
-        return boto3.session.Session(profile_name=self.profile)
+        if self.profile:
+            return boto3.session.Session(profile_name=self.profile)
+
+        return boto3.session.Session()
 
     @property
     def profile(self) -> str:
