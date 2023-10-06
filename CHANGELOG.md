@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.3 (2023-10-06)
+
+### Fix
+
+* Fallback on environment variable ([#34](https://github.com/binxio/aws-securityhub-suppression/issues/34)) ([`b088ba4`](https://github.com/binxio/aws-securityhub-suppression/commit/b088ba4c1d8d603a102d229133bf4260f4a08c93))
+
 ## v0.3.2 (2023-07-17)
 
 ### Fix
