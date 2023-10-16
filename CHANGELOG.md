@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.4 (2023-10-16)
+
+### Fix
+
+* Use AWS_REGION environment variable ([#36](https://github.com/binxio/aws-securityhub-suppression/issues/36)) ([`c436529`](https://github.com/binxio/aws-securityhub-suppression/commit/c436529773dd705cbb867562684a7956304b6e9c))
+
 ## v0.3.3 (2023-10-06)
 
 ### Fix
