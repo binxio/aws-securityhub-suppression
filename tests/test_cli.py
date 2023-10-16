@@ -28,6 +28,34 @@ def test_update() -> None:
     assert result.exit_code == 0
 
 
+def test_update_region() -> None:
+    runner = CliRunner()
+    result = runner.invoke(cli, ["--region", "eu-west-1", "update"])
+
+    assert result.exit_code == 0
+
+
+def test_update_profile() -> None:
+    runner = CliRunner()
+    result = runner.invoke(cli, ["--profile", "my-profile", "update"])
+
+    assert result.exit_code == 0
+
+
+def test_update_region_debug() -> None:
+    runner = CliRunner()
+    result = runner.invoke(cli, ["--debug", "--region", "eu-west-1", "update"])
+
+    assert result.exit_code == 0
+
+
+def test_update_profile_debug() -> None:
+    runner = CliRunner()
+    result = runner.invoke(cli, ["--debug", "--profile", "my-profile", "update"])
+
+    assert result.exit_code == 0
+
+
 @patch("aws_securityhub_suppression.cli.Context")
 def test_update_suppression(mock_context) -> None:
     mock_client = MagicMock()
