@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.5 (2023-11-03)
+
+### Fix
+
+* Max length reasoning ([#37](https://github.com/binxio/aws-securityhub-suppression/issues/37)) ([`b4f9a8c`](https://github.com/binxio/aws-securityhub-suppression/commit/b4f9a8cdedf8d17f717fdf972e69b05783b7401e))
+
 ## v0.3.4 (2023-10-16)
 
 ### Fix

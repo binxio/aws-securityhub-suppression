@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aws-securityhub-suppression"
-version = "0.3.4"
+version = "0.3.5"
 description = ""
 authors = ["Joris Conijn <Joris.Conijn@xebia.com>"]
 license = "MIT"
