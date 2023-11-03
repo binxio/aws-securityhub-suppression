@@ -26,6 +26,8 @@ properties:
           type: string
         Reason:
           type: string
+          minLength: 1
+          maxLength: 512
         Findings:
           type: array
           items:
